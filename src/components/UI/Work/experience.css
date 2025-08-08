@@ -1,0 +1,203 @@
+/* Main Container */
+.experience-container {
+  padding: 100px 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.experience-heading {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px; 
+  transition: color 0.3s ease; 
+  color: #fdac34;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.experience-heading::after {
+  content: '';
+  position: absolute;
+  width: 0;   
+  height: 2px;            
+  background-color: #fdac34;
+  bottom: -5px;              
+  left: 0;
+  transition: width 0.4s ease-out; 
+}
+
+.experience-heading:hover::after {
+  width: 100%;              
+}
+
+/* Layout: Tabs on Left, Content on Right */
+.experience-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.highlighted-text {
+  color: #fdac34;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fdac34;
+}
+
+/* Tabs Styling (Left Side) */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs strong {
+  color: #fdac34;
+}
+
+.tab-button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-left: 4px solid transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 220px;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  border-left: 4px solid #fdac34;
+  color: #fdac34;
+  background-color: rgba(253, 172, 52, 0.1);
+}
+
+.tab-button.active {
+  border-left: 4px solid #fdac34;
+  color: #fdac34;
+  font-weight: bold;
+  background-color: rgba(253, 172, 52, 0.15);
+}
+
+/* Content Styling (Right Side) */
+.tab-content {
+  max-width: 600px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.experience-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.experience-details h3 span {
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.experience-details h4 {
+  font-size: 1.2rem;
+  color: #fdac34;
+  margin-bottom: 15px;
+}
+
+.experience-details p, .experience-details li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .experience-heading {
+    font-size: 2rem;
+  }
+
+  .experience-container{
+    min-height: 400px;
+  }
+
+  .experience-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .tabs {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tab-button {
+    width: auto;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .tab-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-heading {
+    font-size: 1.8rem;
+  }
+
+  .tab-button {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .experience-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-details p, .experience-details li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .experience-heading {
+    font-size: 1.5rem;
+  }
+
+  .tab-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .experience-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .experience-details p, .experience-details li {
+    font-size: 0.85rem;
+  }
+}

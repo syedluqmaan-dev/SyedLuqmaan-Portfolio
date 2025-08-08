@@ -1,0 +1,153 @@
+/* Container */
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  height: 100vh;
+  margin-top: -50px;
+}
+
+/* Intro Text */
+.banner-intro-text {
+  font-size: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #ffffff;
+}
+
+/* Name Highlight */
+.banner-intro-name {
+  color: #fdac34;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline Effect */
+.banner-intro-name::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #fdac34;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.4s ease-out;
+}
+
+.banner-intro-name:hover::after {
+  width: 100%;
+}
+
+.banner-intro-name:hover {
+  color: #ffa500;
+}
+
+/* Subtext */
+.banner-intro-subtext {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* Developer Image */
+.banner-dev-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url('/image/me.jpg'); /* ✅ Fixed path */
+  background-size: cover;
+  background-position: 40% 20%; /* 🔥 Adjusted X and Y to center your face */
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.banner-skills {
+  color: white;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'SF Mono', monospace;
+}
+
+
+.banner-dev-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(253, 172, 52, 0.8);
+  border-color: #fdac34;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding: 150px 100px 150px 100px;
+  }
+
+  .banner-intro-name {
+    font-size: 50px;
+  }
+
+  .banner-intro-text {
+    font-size: 16px;
+  }
+
+  .banner-intro-subtext {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .banner-dev-image {
+    justify-items: center;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 160px 10px 10px 20px;
+  }
+}
+.banner-social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.banner-icon {
+  color: white; /* White icons */
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.banner-icon:hover {
+  transform: scale(1.2);
+  color: #ffd700; /* Gold hover effect */
+}
+
+
