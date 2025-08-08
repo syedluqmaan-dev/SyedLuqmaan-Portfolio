@@ -32,7 +32,7 @@ function Header() {
         {/* Logo */}
         <div className="logo-container" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
           <img
-            src="src/assets/images/logo.png"
+            src="public/image/logo.png"
             className="portfolio-logo"
             alt="Site Logo"
           />
