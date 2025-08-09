@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './headerstyle.css';
-import logo from '/Users/syedluqmaan/Desktop/SyedLuqmaan-Portfolio copy/public/logo.png'; 
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,10 +32,11 @@ function Header() {
         {/* Logo */}
         <div className="logo-container" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
           <img
-            src={logo}
-            className="portfolio-logo"
-            alt="Site Logo"
-          />
+  src="/logo.png"
+  className="portfolio-logo"
+  alt="Site Logo"
+/>
+
         </div>
 
         {/* Hamburger Menu for Mobile */}
