@@ -17,8 +17,8 @@ function Header() {
   };
 
   const handleResumeClick = () => {
-    window.open('/Resume/Syed_Luqmaan_Frontend_Mobile_Developer_Resume.pdf', '_blank');
-  };
+  window.open('/Syed_Luqmaan_Frontend_Mobile_Developer_Resume.pdf', '_blank');
+};
 
   const handleLogoClick = () => {
     // window.location.reload(); // Reloads the page

@@ -60,7 +60,7 @@ function Projects() {
         {
             title: "Portfolio Website",
             description: "This portfolio you're viewing now. Built with React, styled for responsiveness, and deployed on Netlify.",
-            github: "https://github.com/syedluqmaan-dev/Portfolio-Website.git",
+            github: "https://github.com/syedluqmaan-dev/SyedLuqmaan-Portfolio.git",
            
         },
 
