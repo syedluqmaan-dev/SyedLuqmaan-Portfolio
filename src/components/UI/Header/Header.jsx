@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './headerstyle.css';
-
+import logo from '/Users/syedluqmaan/Desktop/SyedLuqmaan-Portfolio copy/public/logo.png'; 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +17,7 @@ function Header() {
   };
 
   const handleResumeClick = () => {
-    window.open('src/assets/Resume/Syed_Luqmaan_Frontend_Mobile_Developer_Resume.pdf', '_blank');
+    window.open('/Resume/Syed_Luqmaan_Frontend_Mobile_Developer_Resume.pdf', '_blank');
   };
 
   const handleLogoClick = () => {
@@ -32,7 +32,7 @@ function Header() {
         {/* Logo */}
         <div className="logo-container" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
           <img
-            src="public/image/logo.png"
+            src={logo}
             className="portfolio-logo"
             alt="Site Logo"
           />

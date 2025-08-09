@@ -76,4 +76,10 @@
   line-height: 1.6;
 }
 
-/* Respo
+
+@media (max-width: 480px) {
+  .about-heading {
+    margin-top: 80px; /* Push it 2 steps down */
+    font-size: 36px; /* Slightly smaller for mobile balance */
+  }
+}
