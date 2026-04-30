@@ -43,13 +43,8 @@ export default function Header() {
       <header className={`sl-header ${scrolled ? "sl-header--scrolled" : ""}`}>
         <div className="sl-header-inner">
 
-          {/* LOGO */}
-          <a href="#home" className="sl-logo" onClick={() => setActive("")}>
-            <span className="sl-logo-sl">SL</span>
-            <span className="sl-logo-dot">.</span>
-            <span className="sl-logo-name">Syed Luqmaan</span>
-          </a>
-
+          
+          
           {/* DESKTOP NAV */}
           <nav className="sl-nav">
             {NAV_LINKS.map((link) => (
