@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import "./HomePage.css";
+import "./Homepage.css";
 
 /* ─────────────────────────────────────────
    DATA
@@ -600,7 +600,7 @@ function Contact() {
 /* ─────────────────────────────────────────
    MAIN PAGE
 ───────────────────────────────────────── */
-export default function HomePage() {
+export default function Homepage() {
   useReveal();
 
   return (
