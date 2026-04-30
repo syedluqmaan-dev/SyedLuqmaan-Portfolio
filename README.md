@@ -2,9 +2,6 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and professional experience as a **Frontend Developer** with a strong foundation in **React & React Native**. The website features a sleek, **retro video game-inspired design** with a starry black background and interactive effects to enhance user experience.
 
-![Portfolio Screenshot](https://raw.githubusercontent.com/syedluqmaan-dev/portfolio/main/portfolio_front.png) <!-- Replace with your actual image path -->
-
----
 
 ## 🛠 Tech Stack
 

@@ -1,14 +1,14 @@
 import './App.css';
-import AppLayout from './components/UI/AppLayout';
 import Header from './components/UI/Header/Header';
 import Footer from './components/UI/Footer/Footer';
+import HomePage from './HomePage';
 
 function App() {
   return (
     <div className="container">
       <Header />
       <main>
-        <AppLayout />
+        <HomePage />
       </main>
       <Footer />
     </div>

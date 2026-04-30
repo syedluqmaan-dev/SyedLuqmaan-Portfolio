@@ -19,7 +19,7 @@ function Banner() {
 
         {/* Social Icons */}
         <div className="banner-social-icons">
-          <a href="mailto:syedluqmaan.dev@gmail.com" className="banner-icon" aria-label="Email">
+          <a href="mailto:Syedluqmaanwork@gmail.com" className="banner-icon" aria-label="Email">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
           <a href="tel:+919620817001" className="banner-icon" aria-label="Phone">
